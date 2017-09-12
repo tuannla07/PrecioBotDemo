@@ -4,7 +4,6 @@
   "description": "Precio fishbone bot demo",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "author": "preciolan\\tung",
@@ -16,10 +15,8 @@
     "querystring": "^0.2.0",
     "restify": "^5.0.1",
     "spo-auth": "^1.0.8",
-    "ssl-root-cas": "^1.2.3"
-  },
-  "devDependencies": {
-    "node-sp-auth": "^1.3.3"
+    "ssl-root-cas": "^1.2.3",
+	"node-sp-auth": "^1.3.3"
   },
   "engines": {
     "node": "6.10.3"
