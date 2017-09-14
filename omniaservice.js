@@ -165,7 +165,7 @@ var self = module.exports = {
                             "internalName": "TaxKeyword",
                             "typeAsString": "TaxonomyFieldTypeMulti",
                             "additionalInfo": {
-                                "termSetId": "d506893c-9d68-46b8-abb4-408393045b83",
+                                "termSetId": "63186e99-24a8-4f06-8387-f0edd7839bad",
                                 "allowMultipleValues": "True",
                                 "createValuesInEditForm": "False",
                                 "open": "True"
@@ -182,29 +182,6 @@ var self = module.exports = {
                             "canEditField": false,
                             "displayFormat": null,
                             "isFieldAllowMultiple": true
-                            },
-                            {
-                            "displayName": "OM Location",
-                            "internalName": "OM_x0020_Location",
-                            "typeAsString": "TaxonomyFieldType",
-                            "additionalInfo": {
-                                "termSetId": "15fd8134-db82-456f-94b4-d1e175378ccf",
-                                "allowMultipleValues": "False",
-                                "createValuesInEditForm": "False",
-                                "open": "False"
-                            },
-                            "isSelected": false,
-                            "isShowInEditMode": false,
-                            "isShowInViewMode": false,
-                            "isShowInShowMore": false,
-                            "isShared": false,
-                            "isShowLabel": false,
-                            "readOnlyField": false,
-                            "required": false,
-                            "groupPermission": null,
-                            "canEditField": false,
-                            "displayFormat": null,
-                            "isFieldAllowMultiple": false
                             }
                         ],
                         "isLoadingFields": false
@@ -230,7 +207,7 @@ var self = module.exports = {
                     "priority": 1,
                     "translatedNews": 1,
                     "pageLocale": "en-us"
-                };
+                    };
         var strData = JSON.stringify(data);
         ajaxservice.buildRequest(url)
             .doPost(strData).then((result)=>{

@@ -76,8 +76,8 @@ module.exports = [
 
 function getNewsCenterUrl(newsCenterName){
     var newsCenter =[
-        {name:"News", value : 'https://spe596856.sharepoint.com/news'},
-        {name:"Employee News", value : 'https://spe596856.sharepoint.com/employee-news'},
+        {name:"News", value : 'https://m365x651370.sharepoint.com/sites/intra/news-ce'},
+        {name:"Employee News", value : 'https://m365x651370.sharepoint.com/sites/intra/employee-news'},
     ];
 
     var item = newsCenter.filter((site)=>{

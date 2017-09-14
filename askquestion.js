@@ -13,6 +13,7 @@ module.exports = [
             session.endDialog();
         } else {
             session.send("Who the hell are you ? :^)");
+            session.endDialog();
         }
     }
 ];
