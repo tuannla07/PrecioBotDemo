@@ -99,7 +99,8 @@ function getNewsItems(session, items){
 }
 
 function toCard(session, news) {
-    var imageUrl = process.env.OMNIA_SITE_COLLECTION_URL + $(news.imageHtml).attr("src");
+    //var imageUrl = process.env.OMNIA_SITE_COLLECTION_URL + $(news.imageHtml).attr("src");
+    var imageUrl = getImage(news);
     var pageUrl = process.env.OMNIA_SITE_COLLECTION_URL + news.url;
     var dateStr=news.modified.replace(/T|\:\d\dZ/g,' ');
 
@@ -109,4 +110,15 @@ function toCard(session, news) {
         .text(news.summary)
         .images([builder.CardImage.create(session, imageUrl)])
         .buttons([builder.CardAction.openUrl(session, pageUrl, 'Read more')]);
+}
+
+function getImage(news){
+    var images =[
+        'https://trello-attachments.s3.amazonaws.com/55123b69640dfffcaabc228e/59ba668b00bdc3af90f9a1a5/c4875c3cd4c554ab1e9519a172575044/demo4.jpg',
+        'https://trello-attachments.s3.amazonaws.com/55123b69640dfffcaabc228e/59ba668b00bdc3af90f9a1a5/44185827e6d79813135071719c17b5f5/demo3.jpg',
+        'https://trello-attachments.s3.amazonaws.com/55123b69640dfffcaabc228e/59ba668b00bdc3af90f9a1a5/83461f6e50a1a57def690c6884745ce4/demo2.jpg',
+        'https://trello-attachments.s3.amazonaws.com/55123b69640dfffcaabc228e/59ba668b00bdc3af90f9a1a5/017a1ba1525165aa455fd9b8526fef5f/demo1.jpg'
+    ];
+    var item = images[Math.floor(Math.random()*images.length)]; 
+    return item;
 }
